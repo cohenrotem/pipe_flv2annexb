@@ -139,15 +139,17 @@ The FLV body contains the AVC encoded stream, arranged in "FLV tags"
 Each "FLV tag" stats with a small header followed by AVC "access unit" payload.  
 
 FLV Tag Structure:  
+
 ```
 [Start of Last Packet][ Type ][Payload Length][timestamp][timestamp upper][identifier][Packet Payload]  
-	  4 Bytes          1 Byte     3 Byes         3 Byes      1 Byte         3 Bytes
+      4 Bytes          1 Byte      3 Byes        3 Byes       1 Byte         3 Bytes
 ```
 
-AVC Packet Payload structure:
+AVC Packet Payload structure:  
+
 ```
 [Frame Type and Codec ID][AVC Packet Type][Composition Time][  Data  ]
-		    1 Byte               1 Byte           3 Bytes        n Bytes
+         1 Byte               1 Byte           3 Bytes        n Bytes
 ```
 
 See: https://en.wikipedia.org/wiki/Flash_Video  
