@@ -1,7 +1,7 @@
 # pipe_flv2annexb
 Writes raw video to FFmpeg stdin PIPE, reads encoded FLV H.264 from stdout PIPE and convert to Annex B standart.
 
-The project includes 3 implemntations that performes the same thing:
+The project includes 3 implemntations that perform the same thing:
 1. **pipe_flv2annexb.py** - Python 3 implementation.
 2. **main_windows.cpp** - C++ implementation for Windows OS.
 3. **main_linux.cpp** - C++ implementation for Linux OS.
