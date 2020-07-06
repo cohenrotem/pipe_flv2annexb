@@ -163,11 +163,11 @@ Converting the "FLV stream" to H.264 elementary stream:
 1. The FLV "file header" is read from the PIPE, and ignored.
 2. Read FLV Tag header, and extract Payload Length.  
    Repeat the process until stdout PIPE is closed:
-2.1 Read NAL units until number of read bytes reaches Payload Length:
-2.1.1 Read NAL unit length.
-2.1.2 Read NAL unit data (according to length).
-2.1.3 Convert the NAL unit format from AVCC to Annex B (replace length with 0x00000001 or 0x000001).  
-	    The Annex B NAL units are written to a file (for testing).
+   - Read NAL units until number of read bytes reaches Payload Length:  
+     - Read NAL unit length.
+     - Read NAL unit data (according to length).
+     - Convert the NAL unit format from AVCC to Annex B (replace length with 0x00000001 or 0x000001).  
+       The Annex B NAL units are written to a file (for testing).
 	  
 How to test:  
 The output is written to a file.  
