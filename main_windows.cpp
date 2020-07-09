@@ -808,7 +808,7 @@ int main()
     }
 
     delete[] raw_img_bytes;
-
+    delete[] flv_bytes;
     delete[] annexb_payload_buf;
 
     success = CSubprocess::ClosePipeAndDeleteObj(ffmpeg_process);
