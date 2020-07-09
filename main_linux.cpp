@@ -1147,7 +1147,7 @@ int main()
     }
 
     delete[] raw_img_bytes;
-
+    delete[] flv_bytes;
     delete[] annexb_payload_buf;
 
 	//Wait for FFmpeg child process to end, and delete ffmpeg_process object (cleanup).
